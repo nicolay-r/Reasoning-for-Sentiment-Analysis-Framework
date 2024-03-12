@@ -1,11 +1,15 @@
-# GPT-Models-for-Sentiment-Analysis
+# Reasoning for Sentiment Analysis
 
-# Contents
+Studies and Collection of LLM-based Reasoning engines / frameworks for Sentiment Analysis.
+This repository contains the code for the paper:
+[Large Language Models in Targeted Sentiment Analysis for Russian]().
 
-* [Installation](#downloading-data)
+## Contents
+
+* [Installation](#installation)
 * [Preparing Data](#preparing-data)
     * [Manual Translation](#manual-data-translation)
-* [**Zero-Shot**](#zero-shot-usage)
+* [**Zero-Shot**](#zero-shot)
     * [Examples](#usage-examples)
 * [References](#references)
 
@@ -32,10 +36,10 @@ You could launch manual data translation to English language (`en`) via [GoogleT
 
 # Zero-Shot
 
-[[prompts]]()
+[[prompts]](utils_prompt.py)
 
 This is a common script for launching LLM model inference in Zero-shot format using manual or 
-[predefined prompts]():
+[predefined prompts](utils_prompt.py):
 
 ```python
 python zero_shot_infer.py \
@@ -78,10 +82,10 @@ python zero_shot_infer.py --model google/flan-t5-base --device cpu
 
 #### Inference with the predefined prompt 
 
-Use the `prompt` command for passing the [predefined prompt]() or textual prompt that involves the `{text}` information. 
+Use the `prompt` command for passing the [predefined prompt](utils_prompt.py) or textual prompt that involves the `{text}` information. 
 
 ```bash
-python 1_infer_instruct_llm.py --model google/flan-t5-small \
+python zero_shot_infer.py --model google/flan-t5-small \
     --device cpu --src data/final_data_en.csv --prompt 'rusentrel2023_default_en'
 ```
 
@@ -98,7 +102,7 @@ python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 --src "zero
 #### OpenAI models
 
 Use the `model` parameter prefixed by `openai:`, followed by 
-[model names]() 
+[model names](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/b8e588e4722c27c88acd33bbaeabeee00a903688/zero_shot_infer.py#L63-L79) 
 as follows:
 
 ```bash
