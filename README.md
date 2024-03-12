@@ -13,13 +13,13 @@ This repository contains the code for the paper:
     * [Examples](#usage-examples)
 * [References](#references)
 
-# Installation
+## Installation
 
 ```bash
 pip install -r dependencies
 ```
 
-# Preparing Data 
+## Preparing Data 
 
 Simply launch the following script for obtaining both original texts and **Translated**:
 ```bash
