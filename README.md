@@ -46,20 +46,20 @@ This is a common script for launching LLM model inference in Zero-shot format us
 
 ```python
 python zero_shot_infer.py \
-        --model "google/flan-t5-base" \
-        --src "data/final_data_en.csv" \
-        --prompt "rusentne2023_default_en" \
-        --device "cpu" \
-        --to "csv" \
-        --temp 0.1 \
-        --output "data/output.csv" \
-        --max-length 512 \
-        --hf-token "<YOUR_HUGGINGFACE_TOKEN>" \
-        --openai-token "<YOUR_OPENAI_TOKEN>" \
-        --limit 10000 \
-        --limit-prompt 10000 \
-        --bf16 \
-        --l4b
+    --model "google/flan-t5-base" \
+    --src "data/final_data_en.csv" \
+    --prompt "rusentne2023_default_en" \
+    --device "cpu" \
+    --to "csv" \
+    --temp 0.1 \
+    --output "data/output.csv" \
+    --max-length 512 \
+    --hf-token "<YOUR_HUGGINGFACE_TOKEN>" \
+    --openai-token "<YOUR_OPENAI_TOKEN>" \
+    --limit 10000 \
+    --limit-prompt 10000 \
+    --bf16 \
+    --l4b
 ```
 
 ### Notes
