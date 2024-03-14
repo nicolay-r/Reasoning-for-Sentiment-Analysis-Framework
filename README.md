@@ -11,12 +11,15 @@ This repository contains the code for the paper:
     * [Manual Translation](#manual-data-translation)
 * [**Zero-Shot**](#zero-shot)
     * [Examples](#usage-examples)
+* [**Chain-of-Thought fine-tuning**](#three-hop-chain-of-thought-thor)
 * [References](#references)
 
 ## Installation
 
+We separate dependencies necessary for zero-shot and fine-tuning experiments:
 ```bash
-pip install -r dependencies
+pip install -r dependencies_zs.txt
+pip install -r dependencies_ft.txt
 ```
 
 ## Preparing Data 
@@ -92,10 +95,17 @@ python zero_shot_infer.py --model google/flan-t5-small \
 #### Zero-Shot CoT 
 [![arXiv](https://img.shields.io/badge/arXiv-2205.11916-b31b1b.svg)](https://arxiv.org/abs/2205.11916)
 
+The application of Two-hop chain-of-thought concept for `Mistral-7B` model:
+
 ```bash
-python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 --src data/final_data_en.csv \
-    --prompt "What's the attitude of the sentence '{sentence}' to the target '{entity}'? Let's think step by step." --output "zeroshot-cot-hop1-{model}.csv"
-python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 --src "zeroshot-cot-hop1-{model}.csv" \
+# Step 1.
+python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 \
+    --src data/final_data_en.csv \
+    --prompt "What's the attitude of the sentence '{sentence}' to the target '{entity}'? Let's think step by step." \
+    --output "zeroshot-cot-hop1-{model}.csv"
+# Step 2.
+python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 \ 
+    --src "zeroshot-cot-hop1-{model}.csv" \
     --prompt "{prompt}{response}. Therefore the sentiment class (positive, negative, neutral) is"
 ```
 
@@ -110,6 +120,40 @@ python zero_shot_infer.py --model "openai:gpt-3.5-turbo-1106" \
     --src "data/final_data_en.csv" --prompt "rusentrel2023_default_en_short" \
     --max-length 75 --limit 5
 ```
+
+</details>
+
+## Three Hop Chain-of-Thought THoR  
+
+```bash
+python thor_finetune.py -r "thor" -d "rusentne2023" 
+    -li <PRETRAINED_STATE_INDEX> \
+    -bs <BATCH_SIZE> \
+    -es <EPOCH_SIZE> \
+    -f "./config/config.yaml" 
+```
+
+<details>
+<summary>
+
+### Parameters list
+</summary>
+
+* `-c`, `--cuda_index`: Index of the GPU to use for computation (default: `0`).
+* `-d`, `--data_name`: Name of the dataset. Choices are `state_se24` or `cause_se24`.
+* `-r`, `--reasoning`: Specifies the reasoning mode, with one-step prompt or multi-step thor mode.
+* `-li`, `--load_iter`: load a state on specific index from the same `data_name` resource (default: `-1`, not applicable.)
+* `-lp`, `--load_path`: load a state on specific path.
+* `-p`, `--instruct`: instructive prompt for `prompt` training engine that involves `target` parameter only"
+* `-es`, `--epoch_size`: amount of training epochs (default: `1`)
+* `-bs`, `--batch_size`: size of the batch (default: `None`)
+* `-lr`, `--bert_lr`: learning rate (default=`2e-4`)
+* `-t`, `--temperature`: temperature (default=gen_config.temperature)
+* `-v`, `--validate`: running under zero-shot mode on `valid` set.
+* `-i`, `--infer_iter`: running inference on `test` dataset to form answers.
+* `-f`, `--config`: Specifies the location of [config.yaml](config/config.yaml) file.
+
+Configure more parameters in [config.yaml](config/config.yaml) file.
 
 </details>
 
