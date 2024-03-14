@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    prompts = utils_prompt.common_prompts | utils_prompt.chatgpt_prompts
+    prompts = {**utils_prompt.common_prompts, **utils_prompt.chatgpt_prompts}
 
     # Check whether the prompt is predefined.
     is_prompt_predefined = (args.prompt is not None) and (args.prompt[0] == '!')

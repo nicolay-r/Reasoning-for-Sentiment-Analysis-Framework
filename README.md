@@ -1,4 +1,6 @@
 # Reasoning for Sentiment Analysis
+![](https://img.shields.io/badge/Python-3.8-brightgreen.svg)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 
 Studies and Collection of LLM-based Reasoning engines / frameworks for Sentiment Analysis.
 This repository contains the code for the paper:
@@ -32,13 +34,13 @@ python rusentne23_download.py
 ## Manual Data Translation
 You could launch manual data translation to English language (`en`) via [GoogleTrans](https://github.com/ssut/py-googletrans):
 ```bash
- python rusentne23_translate.py --src data/train_data.csv --lang en --label
- python rusentne23_translate.py --src data/valid_data.csv --lang en --label
- python rusentne23_translate.py --src data/final_data.csv --lang en
+ python rusentne23_translate.py --src "data/train_data.csv" --lang "en" --label
+ python rusentne23_translate.py --src "data/valid_data.csv" --lang "en" --label
+ python rusentne23_translate.py --src "data/final_data.csv" --lang "en"
  ```
 
 # Zero-Shot
-
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [[prompts]](utils_prompt.py)
 
 This is a common script for launching LLM model inference in Zero-shot format using manual or 
@@ -123,7 +125,8 @@ python zero_shot_infer.py --model "openai:gpt-3.5-turbo-1106" \
 
 </details>
 
-## Three Hop Chain-of-Thought THoR  
+# Three Hop Chain-of-Thought THoR  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 
 ```bash
 python thor_finetune.py -r "thor" -d "rusentne2023" 
