@@ -143,17 +143,13 @@ python thor_finetune.py -r "thor" -d "rusentne2023"
 </summary>
 
 * `-c`, `--cuda_index`: Index of the GPU to use for computation (default: `0`).
-* `-d`, `--data_name`: Name of the dataset. Choices are `state_se24` or `cause_se24`.
-* `-r`, `--reasoning`: Specifies the reasoning mode, with one-step prompt or multi-step thor mode.
+* `-d`, `--data_name`: Name of the dataset (`rusentne2023`)
+* `-r`, `--reasoning`: Specifies the reasoning mode (engine), with single `prompt` or multi-step `thor` mode.
 * `-li`, `--load_iter`: load a state on specific index from the same `data_name` resource (default: `-1`, not applicable.)
-* `-lp`, `--load_path`: load a state on specific path.
-* `-p`, `--instruct`: instructive prompt for `prompt` training engine that involves `target` parameter only"
 * `-es`, `--epoch_size`: amount of training epochs (default: `1`)
 * `-bs`, `--batch_size`: size of the batch (default: `None`)
-* `-lr`, `--bert_lr`: learning rate (default=`2e-4`)
 * `-t`, `--temperature`: temperature (default=gen_config.temperature)
-* `-v`, `--validate`: running under zero-shot mode on `valid` set.
-* `-i`, `--infer_iter`: running inference on `test` dataset to form answers.
+* `-z`, `--zero_shot`: running zero-shot inference with chosen engine on `test` dataset to form answers.
 * `-f`, `--config`: Specifies the location of [config.yaml](config/config.yaml) file.
 
 Configure more parameters in [config.yaml](config/config.yaml) file.
