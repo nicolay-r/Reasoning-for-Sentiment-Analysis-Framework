@@ -46,7 +46,7 @@ You could launch manual data translation to English language (`en`) via [GoogleT
 This is a common script for launching LLM model inference in Zero-shot format using manual or 
 [predefined prompts](utils_prompt.py):
 
-```python
+```bash
 python zero_shot_infer.py \
     --model "google/flan-t5-base" \
     --src "data/final_data_en.csv" \
