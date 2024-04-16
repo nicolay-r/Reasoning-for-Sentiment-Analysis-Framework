@@ -2,8 +2,8 @@
 ![](https://img.shields.io/badge/Python-3.8-brightgreen.svg)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 
-Studies and Collection of LLM-based Reasoning engines / frameworks for Sentiment Analysis.
-This repository contains the code for the paper:
+Studies and Collection of LLM-based reasoning frameworks for Target Sentiment Analysis.
+This repository contains source code for paper @ [LJoM journal](https://link.springer.com/journal/12202) titled as:
 [Large Language Models in Targeted Sentiment Analysis for Russian]().
 
 ## Contents
