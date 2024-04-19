@@ -3,7 +3,9 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
-> **Update 19/04/2024:** We open a separate 📊 👉[RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)👈 📊 for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series.
+> **💻 Update 19/04/2024:** We open [quick_cot](https://github.com/nicolay-r/quick_cot) code repository for lauching quick CoT zero-shot-learning / few-shot-learning experiments with LLM, utilied in this studies. [More ...](https://github.com/nicolay-r/quick_cot)
+
+> **📊 Update 19/04/2024:** We open a separate 📊 👉[RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)👈 📊 for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series.
 > [More ...](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)
 
 
@@ -101,23 +103,6 @@ python zero_shot_infer.py --model google/flan-t5-small \
     --device cpu --src data/final_data_en.csv --prompt 'rusentrel2023_default_en'
 ```
 
-#### Zero-Shot CoT 
-[![arXiv](https://img.shields.io/badge/arXiv-2205.11916-b31b1b.svg)](https://arxiv.org/abs/2205.11916)
-
-The application of Two-hop chain-of-thought concept for `Mistral-7B` model:
-
-```bash
-# Step 1.
-python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 \
-    --src data/final_data_en.csv \
-    --prompt "What's the attitude of the sentence '{sentence}' to the target '{entity}'? Let's think step by step." \
-    --output "zeroshot-cot-hop1-{model}.csv"
-# Step 2.
-python zero_shot_infer.py --model mistralai/Mistral-7B-Instruct-v0.1 \ 
-    --src "zeroshot-cot-hop1-{model}.csv" \
-    --prompt "{prompt}{response}. Therefore the sentiment class (positive, negative, neutral) is"
-```
-
 #### OpenAI models
 
 Use the `model` parameter prefixed by `openai:`, followed by 
@@ -131,6 +116,15 @@ python zero_shot_infer.py --model "openai:gpt-3.5-turbo-1106" \
 ```
 
 </details>
+
+# Zero-Shot Chain-of-Thought 
+
+This functionality if out-of-scope of this repository.
+
+We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/quick_cot) for applying CoT schemas, with API similar to one in  [**Zero-Shot**](#zero-shot) section, based on **schemas** written in JSON notation.
+
+### 📝 👉 [`thor-cot-shema.json`]() 👈
+### 💻 👉 [Tiny CoT-framework (quick_cot)](https://github.com/nicolay-r/quick_cot) 👈
 
 # Three Hop Chain-of-Thought THoR  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
