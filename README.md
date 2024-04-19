@@ -1,10 +1,16 @@
 # Reasoning for Sentiment Analysis
 ![](https://img.shields.io/badge/Python-3.8-brightgreen.svg)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
+[![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
+
+> **Update 19/04/2024:** We open a separate 📊 👉[RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)👈 📊 for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series.
+> [More ...](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)
+
 
 Studies and Collection of LLM-based reasoning frameworks for Target Sentiment Analysis.
 This repository contains source code for paper @ [LJoM journal](https://link.springer.com/journal/12202) titled as:
-[Large Language Models in Targeted Sentiment Analysis for Russian]().
+[Large Language Models in Targeted Sentiment Analysis for Russian](https://arxiv.org/abs/2404.12342).
+
 
 ## Contents
 
@@ -14,6 +20,7 @@ This repository contains source code for paper @ [LJoM journal](https://link.spr
 * [**Zero-Shot**](#zero-shot)
     * [Examples](#usage-examples)
 * [**Chain-of-Thought fine-tuning**](#three-hop-chain-of-thought-thor)
+* [**Answers**](#answers)
 * [References](#references)
 
 ## Installation
@@ -156,7 +163,23 @@ Configure more parameters in [config.yaml](config/config.yaml) file.
 
 </details>
 
+## Answers
+
+Results of the zero-shot models obtained during experiments fall outside the scope of this repository.
+We open a separate  for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series:
+
+### 👉 [RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark) 👈
 
 ## References
 
-> TODO.
+You can cite this work as follows:
+```bibtex
+@misc{rusnachenko2024large,
+      title={Large Language Models in Targeted Sentiment Analysis}, 
+      author={Nicolay Rusnachenko and Anton Golubev and Natalia Loukachevitch},
+      year={2024},
+      eprint={2404.12342},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
+```
