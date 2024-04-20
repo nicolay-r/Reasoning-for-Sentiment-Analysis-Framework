@@ -123,7 +123,7 @@ This functionality if out-of-scope of this repository.
 
 We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/quick_cot) for applying CoT schemas, with API similar to one in  [**Zero-Shot**](#zero-shot) section, based on **schemas** written in JSON notation.
 
-### 📝 👉 [`thor-zero-shot-cot-english-shema.json`](config/thor-zero-shot-cot-schema.json) 👈
+### 📝 👉 [`thor-zero-shot-cot-english-shema.json`](config/thor-zero-shot-cot-english-schema.json) 👈
 ### 💻 👉 [Tiny CoT-framework (quick_cot)](https://github.com/nicolay-r/quick_cot) 👈
 
 # Three Hop Chain-of-Thought THoR  
