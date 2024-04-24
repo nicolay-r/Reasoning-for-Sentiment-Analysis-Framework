@@ -3,6 +3,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
+> **🔥 Update 24/04/2024:** We released fine-tuning log for the [prompt-based](DOC_FLANT5_PROMPT_FT.md) and [THoR-based](DOC_FLANT5_THOR_FT.md) techniques applied for the `train` competition data as well as **[checkpoints](#fine-tuned-flan-t5)** for downloading. [More ...](#fine-tuned-flan-t5)
+
 > **💻 Update 19/04/2024:** We open [quick_cot](https://github.com/nicolay-r/quick_cot) code repository for lauching quick CoT zero-shot-learning / few-shot-learning experiments with LLM, utilied in this studies. [More ...](https://github.com/nicolay-r/quick_cot)
 
 > **📊 Update 19/04/2024:** We open a separate 📊 👉[RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark)👈 📊 for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series.
@@ -22,6 +24,7 @@ This repository contains source code for paper @ [LJoM journal](https://link.spr
 * [**Zero-Shot**](#zero-shot)
     * [Examples](#usage-examples)
 * [**Chain-of-Thought fine-tuning**](#three-hop-chain-of-thought-thor)
+* [**Fine-tuned Flan-T5 Checkpoints 🔥**](#fine-tuned-flan-t5)
 * [**Answers**](#answers)
 * [References](#references)
 
@@ -125,6 +128,15 @@ We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/
 
 ### 📝 👉 [`thor-zero-shot-cot-english-shema.json`](config/thor-zero-shot-cot-english-schema.json) 👈
 ### 💻 👉 [Tiny CoT-framework (quick_cot)](https://github.com/nicolay-r/quick_cot) 👈
+
+# Fine-tuned Flan-T5
+
+|Model|prompt|THoR|
+|-----|------|----|
+|**FlanT5-base** | - |[[Google Drive Link]](https://drive.google.com/file/d/1oR5iGKgbiJ7J1Bs9c_e9Qyl_99WbtRPY/view?usp=drive_link)|
+|**FlanT5-large**| - |[[Google Drive Link]](https://drive.google.com/file/d/1-4OCvA-HN6QQ_srrt0eiAmIPQJEr7OO2/view?usp=drive_link) |
+|**FlanT5-xl**   | [[Google Drive Link]](https://drive.google.com/file/d/1-i3cHozJ1F98JsOiMtZoXJB0GiuGGygF/view?usp=sharing) | [[Google Drive Link]](https://drive.google.com/file/d/1-0WRYUbMzdbpDyzzMqQMtOwe5rFuiIus/view?usp=drive_link)|
+
 
 # Three Hop Chain-of-Thought THoR  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
