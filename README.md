@@ -131,6 +131,11 @@ We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/
 
 # Fine-tuned Flan-T5
 
+👉 [**Prompt-Fine-Tuning** Logs](DOC_FLANT5_PROMPT_FT.md)
+
+👉 [**THoR-Fine-Tuning** Logs](DOC_FLANT5_THOR_FT.md)
+
+
 |Model|prompt|THoR|
 |-----|------|----|
 |**FlanT5-base** | - |[[Google Drive Link]](https://drive.google.com/file/d/1oR5iGKgbiJ7J1Bs9c_e9Qyl_99WbtRPY/view?usp=drive_link)|
