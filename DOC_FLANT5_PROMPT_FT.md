@@ -18,7 +18,7 @@ NVidia-V100, ~1.5 min/epoch
 **Implementation:** `engine_prompt.py`
 
 **Result:** F1_PN = 60.796
-```
+```tsv
      F1_PN  F1_PN0  default   mode
 0   62.009  70.023   70.023  valid
 1   64.580  72.050   72.050  valid
@@ -45,7 +45,7 @@ python main.py -r prompt -d rusentne2023 -bs 4 -es 4 -bf16 -p "What's the attitu
 **Checkpoint**: [[Google Drive Link]](https://drive.google.com/file/d/1-i3cHozJ1F98JsOiMtZoXJB0GiuGGygF/view?usp=sharing)
 
 **Result:** F1_PN = **68.197** 
-```
+```tsv
    F1_PN  F1_PN0  default   mode
 0  63.254  71.802   71.802  valid
 1  67.996  75.173   75.173  valid
