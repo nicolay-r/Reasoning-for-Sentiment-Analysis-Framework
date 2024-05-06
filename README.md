@@ -55,7 +55,8 @@ You could launch manual data translation to English language (`en`) via [GoogleT
 
 # Zero-Shot
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
-[[prompts]](utils_prompt.py)
+[![](https://img.shields.io/badge/prompts-ffffff.svg)](utils_prompt.py)
+
 
 This is a common script for launching LLM model inference in Zero-shot format using manual or 
 [predefined prompts](utils_prompt.py):
