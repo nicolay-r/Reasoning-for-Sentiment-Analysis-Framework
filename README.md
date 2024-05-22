@@ -3,6 +3,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
+> **Update 22 May 2024:** ⚠️ in `GoogleColab` you might find zero evaluation results (see [#8 issue](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/issues/8)) (`0`) on `test` part, which is due to locked availablity on labels 🔐. In order to apply your model for `test` part, please proceed with the [Official RuSentNE-2023 codalab competition page](https://codalab.lisn.upsaclay.fr/competitions/9538) or at [Github](https://github.com/dialogue-evaluation/RuSentNE-evaluation).
+
 > **Update 06 March 2024**: 🔓 `attrdict` represents the main limitation for code launching in `Python 3.10` and hence been switched to `addict` (see [Issue#7](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/issues/7)).
 
 > **🔥 Update 24/04/2024:** We released fine-tuning log for the [prompt-based](DOC_FLANT5_PROMPT_FT.md) and [THoR-based](DOC_FLANT5_THOR_FT.md) techniques applied for the `train` competition data as well as **[checkpoints](#fine-tuned-flan-t5)** for downloading. [More ...](#fine-tuned-flan-t5)
