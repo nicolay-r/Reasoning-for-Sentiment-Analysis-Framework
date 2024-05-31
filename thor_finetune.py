@@ -5,7 +5,6 @@ from addict import Dict
 
 import yaml
 import torch
-import pandas as pd
 from transformers import GenerationConfig
 
 from src.ft.cot_default import ChainOfThoughtDefault
@@ -111,10 +110,6 @@ class Template:
 
         print("Fine-tuning mode for training.")
         trainer.train(epoch_from=epoch_from)
-        lines = trainer.lines
-
-        df = pd.DataFrame(lines)
-        print(df.to_string())
 
 
 if __name__ == '__main__':

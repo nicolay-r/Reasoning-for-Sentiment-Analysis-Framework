@@ -2,8 +2,6 @@ import argparse
 
 from os.path import join, basename
 
-import pandas as pd
-
 import utils_prompt
 from src.lm.decilm import DeciLM
 from src.lm.flan_t5 import FlanT5
@@ -80,8 +78,8 @@ if __name__ == '__main__':
 
     input_providers = {
         None: lambda _: chat_with_lm(llm, do_exit=True),
-        # TODO. Use CsvService API instead.
-        "csv": lambda filepath: PandasService.iter_rows_as_dict(df=pd.read_csv(filepath, sep=args.csv_sep))
+        "csv": lambda filepath: CsvService.read(target=filepath, delimiter=args.csv_sep,
+                                                as_dict=True, skip_header=True)
     }
 
     infer_modes = {

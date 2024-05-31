@@ -26,12 +26,12 @@ class CsvService:
         CsvService.write(target, lines_it=__it())
 
     @staticmethod
-    def read(target, delimiter='\t', quotechar='"', skip_header=False, cols=None, return_row_ids=False):
-        assert(isinstance(cols, list) or cols is None)
+    def read(target, skip_header=False, cols=None, as_dict=False, **csv_kwargs):
+        assert (isinstance(cols, list) or cols is None)
 
         header = None
         with open(target, newline='\n') as f:
-            for row_id, row in enumerate(csv.reader(f, delimiter=delimiter, quotechar=quotechar)):
+            for row_id, row in tqdm(enumerate(csv.reader(f, **csv_kwargs)), desc="Reading CSV"):
                 if skip_header and row_id == 0:
                     header = row
                     continue
@@ -44,18 +44,9 @@ class CsvService:
                     content = [row_d[col_name] for col_name in cols]
 
                 # Optionally attach row_id to the content.
-                yield [row_id] + content if return_row_ids else content
-
-
-# TODO. This service could be removed and expected to be replaced with the CsvService.
-class PandasService(object):
-
-    @staticmethod
-    def iter_rows_as_dict(df):
-        for _, data in tqdm(df.iterrows(), total=len(df)):
-            yield data.to_dict()
-
-    @staticmethod
-    def iter_rows_as_list(df, cols=None):
-        for data_dict in PandasService.iter_rows_as_dict(df):
-            yield [data_dict[c] for c in cols]
+                if as_dict:
+                    assert (header is not None)
+                    assert (len(content) == len(header))
+                    yield {k: v for k, v in zip(header, content)}
+                else:
+                    yield content
