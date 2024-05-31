@@ -26,12 +26,12 @@ class CsvService:
         CsvService.write(target, lines_it=__it())
 
     @staticmethod
-    def read(target, skip_header=False, cols=None, as_dict=False, **csv_kwargs):
+    def read(target, skip_header=False, cols=None, as_dict=False, pbar_desc=None, **csv_kwargs):
         assert (isinstance(cols, list) or cols is None)
 
         header = None
         with open(target, newline='\n') as f:
-            for row_id, row in tqdm(enumerate(csv.reader(f, **csv_kwargs)), desc="Reading CSV"):
+            for row_id, row in tqdm(enumerate(csv.reader(f, **csv_kwargs)), desc=pbar_desc):
                 if skip_header and row_id == 0:
                     header = row
                     continue

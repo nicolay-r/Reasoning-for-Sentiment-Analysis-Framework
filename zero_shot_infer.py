@@ -79,7 +79,7 @@ if __name__ == '__main__':
     input_providers = {
         None: lambda _: chat_with_lm(llm, do_exit=True),
         "csv": lambda filepath: CsvService.read(target=filepath, delimiter=args.csv_sep,
-                                                as_dict=True, skip_header=True)
+                                                as_dict=True, skip_header=True, pbar_desc="Infer from CSV")
     }
 
     infer_modes = {
