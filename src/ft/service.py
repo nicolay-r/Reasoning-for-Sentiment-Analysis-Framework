@@ -95,7 +95,7 @@ class CsvService:
                 if cols is None:
                     content = row
                 else:
-                    row_d = {header[col_name]: value for col_name, value in enumerate(row)}
+                    row_d = {header[col_ind]: value for col_ind, value in enumerate(row)}
                     content = [row_d[col_name] for col_name in cols]
 
                 # Optionally attach row_id to the content.
