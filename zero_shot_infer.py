@@ -9,6 +9,7 @@ from src.lm.gemma import Gemma
 from src.lm.microsoft_phi_2 import MicrosoftPhi2
 from src.lm.mistral import Mistral
 from src.lm.openai_chatgpt import OpenAIGPT
+from src.service_csv import CsvService
 from src.service_data import DataService
 from src.service_llm import chat_with_lm
 from src.service_sqlite import SQLiteProvider
