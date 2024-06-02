@@ -11,7 +11,7 @@ def convert_rusentne2023_dataset(src, target, has_label=True):
     print(f"Reading source: {src}")
     cols = ["sentence", "entity"] + (["label"] if has_label else [])
     records_it = [[item[0], item[1]] + [int(item[2]) if has_label else 0]
-                  for item in CsvService.read(target=src, skip_header=True, cols=cols)]
+                  for item in CsvService.read(target=src, skip_header=True, delimiter="\t", cols=cols)]
     THoRFrameworkService.write_dataset(target_template=target, entries_it=records_it, label_map=LABEL_MAP)
 
 
