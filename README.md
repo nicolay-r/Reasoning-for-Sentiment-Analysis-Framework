@@ -143,9 +143,9 @@ We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/
 
 |Model|prompt|THoR|
 |-----|------|----|
-|**FlanT5-base** | - |[[Google Drive Link]](https://drive.google.com/file/d/1oR5iGKgbiJ7J1Bs9c_e9Qyl_99WbtRPY/view?usp=drive_link)|
-|**FlanT5-large**| - |[[Google Drive Link]](https://drive.google.com/file/d/1-4OCvA-HN6QQ_srrt0eiAmIPQJEr7OO2/view?usp=drive_link) |
-|**FlanT5-xl**   | [[Google Drive Link]](https://drive.google.com/file/d/1-i3cHozJ1F98JsOiMtZoXJB0GiuGGygF/view?usp=sharing) | [[Google Drive Link]](https://drive.google.com/file/d/1-0WRYUbMzdbpDyzzMqQMtOwe5rFuiIus/view?usp=drive_link)|
+|**FlanT5-base** | - |[🤗 nicolay-r/flan-t5-tsa-thor-base](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-base)|
+|**FlanT5-large**| - |[🤗 nicolay-r/flan-t5-tsa-thor-large](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-large) |
+|**FlanT5-xl**   | [🤗 nicolay-r/flan-t5-tsa-prompt-large](https://huggingface.co/nicolay-r/flan-t5-tsa-prompt-xl) | [🤗 nicolay-r/flan-t5-tsa-prompt-xl](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-xl)|
 
 
 # Three Hop Chain-of-Thought THoR  

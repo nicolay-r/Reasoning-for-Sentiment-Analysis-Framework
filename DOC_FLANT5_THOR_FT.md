@@ -6,7 +6,8 @@ The provided logging information here is for the prompts of version 1 in english
 
 **GPU:** `NVidia-A100`, ~4 min/epoch, temperature 1.0, float 32
 
-**Checkpoint:** [[Google Drive Link]](https://drive.google.com/file/d/1oR5iGKgbiJ7J1Bs9c_e9Qyl_99WbtRPY/view?usp=drive_link)
+**Checkpoint:** [🤗 nicolay-r/flan-t5-tsa-thor-base](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-base)
+
 **Result:** F1_PN = 60.024
 ```tsv
     F1_PN  F1_PN0  default   mode
@@ -22,7 +23,7 @@ The provided logging information here is for the prompts of version 1 in english
 
 **Setup:** `Flan-T5-large`, output up to 300 tokens, 5 epochs, 12-batch size. NVidia-A100, ~12 min/epoch, temperature 1.0, float 32
 
-**Checkpoint:** [[Google Drive Link]](https://drive.google.com/file/d/1-4OCvA-HN6QQ_srrt0eiAmIPQJEr7OO2/view?usp=drive_link)
+**Checkpoint:** [🤗 nicolay-r/flan-t5-tsa-thor-large](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-large)
 
 **Result:** F1_PN = 62.715
 
@@ -37,13 +38,12 @@ The provided logging information here is for the prompts of version 1 in english
 6  62.715  71.001   71.001   test
 ```
 
-**Setup:** `Flan-T5-xl` up to 64 tokens, 1 epoch, 4-batch size, NVidia-A100, **bfloat16** ~ 30 min/epoch, NVidia A100 (40GB)
-> NOTE: could not be fitted in 40GB VRAM. FP16 mode lead to `Nan` loss
+**Setup:** `Flan-T5-xl` up to 64 tokens, 4-batch size, NVidia-A100, **bfloat16** ~ 30 min/epoch, NVidia A100 (40GB)
  
 **Result:** Confirmed as mentioned in THoR paper. Reasoning capabilities are even higher than with `large` model.
 The best result from the epoch #2.
 
-**Checkpoint:** [[Google Drive Link]](https://drive.google.com/file/d/1-0WRYUbMzdbpDyzzMqQMtOwe5rFuiIus/view?usp=drive_link)
+**Checkpoint:** [🤗 nicolay-r/flan-t5-tsa-prompt-xl](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-xl)
 
 **Result:** F1_PN = 65.090
 ```tsv

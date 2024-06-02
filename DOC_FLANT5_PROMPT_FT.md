@@ -42,7 +42,7 @@ Trained with the new version of the project:
 python main.py -r prompt -d rusentne2023 -bs 4 -es 4 -bf16 -p "What's the attitude of the sentence '{context}', to the target '{target}'?"
 ```
 
-**Checkpoint**: [[Google Drive Link]](https://drive.google.com/file/d/1-i3cHozJ1F98JsOiMtZoXJB0GiuGGygF/view?usp=sharing)
+**Checkpoint**: [🤗 nicolay-r/flan-t5-tsa-prompt-large](https://huggingface.co/nicolay-r/flan-t5-tsa-prompt-xl)
 
 **Result:** F1_PN = **68.197** 
 ```tsv
