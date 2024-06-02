@@ -118,6 +118,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
     parser.add_argument('-c', '--cuda_index', default=0)
+    parser.add_argument('-m', '--model_path', default='google/flan-t5-base')
     parser.add_argument('-r', '--reasoning', default='thor', choices=['prompt', 'thor'],
                         help='with one-step prompt or multi-step thor reasoning')
     parser.add_argument('-z', '--zero_shot', action='store_true', default=False,

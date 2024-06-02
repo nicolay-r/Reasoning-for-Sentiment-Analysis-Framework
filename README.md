@@ -153,6 +153,7 @@ We release a tiny framework, dubbed as [quick_cot](https://github.com/nicolay-r/
 
 ```bash
 python thor_finetune.py -r "thor" -d "rusentne2023" 
+    -m "google/flan-t5-base" \
     -li <PRETRAINED_STATE_INDEX> \
     -bs <BATCH_SIZE> \
     -es <EPOCH_SIZE> \
@@ -166,6 +167,7 @@ python thor_finetune.py -r "thor" -d "rusentne2023"
 </summary>
 
 * `-c`, `--cuda_index`: Index of the GPU to use for computation (default: `0`).
+* `-m`, `--model_path`: Path to the model on hugging face.
 * `-d`, `--data_name`: Name of the dataset (`rusentne2023`)
 * `-r`, `--reasoning`: Specifies the reasoning mode (engine), with single `prompt` or multi-step `thor` mode.
 * `-li`, `--load_iter`: load a state on specific index from the same `data_name` resource (default: `-1`, not applicable.)
