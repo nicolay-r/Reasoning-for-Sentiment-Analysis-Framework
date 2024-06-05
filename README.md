@@ -3,6 +3,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
+> **Update 05 June 2024:** The frameworkless lauch of the THoR-tuned FlanT5 model for direct inference is now available in [GoogleColab](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/FlanT5_Finetuned_Model_Usage.ipynb).
+
 > **Update 02 June 2024:** 🤗 Models were uploaded on `huggingface`: [🤗 nicolay-r/flan-t5-tsa-prompt-xl](https://huggingface.co/nicolay-r/flan-t5-tsa-thor-xl) and other models smaller sizes as well. Check out the [related section](#fine-tuned-flan-t5).
 
 > **Update 22 May 2024:** ⚠️ in `GoogleColab` you might find zero evaluation results (see [#8 issue](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/issues/8)) (`0`) on `test` part, which is due to locked availablity on labels 🔐. In order to apply your model for `test` part, please proceed with the [Official RuSentNE-2023 codalab competition page](https://codalab.lisn.upsaclay.fr/competitions/9538) or at [Github](https://github.com/dialogue-evaluation/RuSentNE-evaluation).
