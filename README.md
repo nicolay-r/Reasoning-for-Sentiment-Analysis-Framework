@@ -22,8 +22,13 @@ Studies and Collection of LLM-based reasoning frameworks for Target Sentiment An
 This repository contains source code for paper @ [LJoM journal](https://link.springer.com/journal/12202) titled as:
 [Large Language Models in Targeted Sentiment Analysis for Russian](https://arxiv.org/abs/2404.12342).
 
+**Overview in Russian Language:**
+
 [![YouTube](http://i.ytimg.com/vi/kdkZsTQibm0/hqdefault.jpg)](https://www.youtube.com/watch?v=kdkZsTQibm0)
 
+**Survey in English:**
+
+[![YouTube](http://i.ytimg.com/vi/TfsmmNHNpdU/hqdefault.jpg)](https://www.youtube.com/watch?v=TfsmmNHNpdU)
 
 ## Contents
 
