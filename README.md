@@ -3,7 +3,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
-> **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/}
+> **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/)
 
 > **Update 11 August 2024:** 🎤 Announcing the talk on this framework @ [NLPSummit 2024](https://www.nlpsummit.org/nlp-summit-2024/) with the preliminary ad and details in [X/Twitter post](https://x.com/nicolayr_/status/1822587387312021663) 🐦. [![twitter](https://img.shields.io/twitter/url/https/shields.io.svg)](https://x.com/nicolayr_/status/1822587387312021663)
 
