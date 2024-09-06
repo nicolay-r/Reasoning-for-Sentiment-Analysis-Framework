@@ -5,7 +5,7 @@
 
 > **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/)
 
-> **Update 11 August 2024:** 🎤 Announcing the talk on this framework @ [NLPSummit 2024](https://www.nlpsummit.org/nlp-summit-2024/) with the preliminary ad and details in [X/Twitter post](https://x.com/nicolayr_/status/1822587387312021663) 🐦. [![twitter](https://img.shields.io/twitter/url/https/shields.io.svg)](https://x.com/nicolayr_/status/1822587387312021663)
+> **Update 11 August 2024:** 🎤 Announcing the talk on this framework @ [NLPSummit 2024](https://www.nlpsummit.org/nlp-summit-2024/) with the preliminary ad and details in [X/Twitter post](https://x.com/JohnSnowLabs/status/1821999936478572836) 🐦. [![twitter](https://img.shields.io/twitter/url/https/shields.io.svg)](https://x.com/JohnSnowLabs/status/1821999936478572836)
 
 > **Update 05 June 2024:** The frameworkless lauch of the **THoR-tuned FlanT5 model** for direct inference is now available in [GoogleColab](https://github.com/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/FlanT5_Finetuned_Model_Usage.ipynb).
 
