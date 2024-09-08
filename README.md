@@ -28,11 +28,12 @@ This repository contains source code for paper @ [LJoM journal](https://link.spr
 
 **Overview in Russian Language:**
 
-[![YouTube](http://i.ytimg.com/vi/kdkZsTQibm0/hqdefault.jpg)](https://www.youtube.com/watch?v=kdkZsTQibm0)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/kdkZsTQibm0)](https://youtu.be/kdkZsTQibm0)
+
 
 **Survey in English:**
 
-[![YouTube](http://i.ytimg.com/vi/TfsmmNHNpdU/hqdefault.jpg)](https://www.youtube.com/watch?v=TfsmmNHNpdU)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/TfsmmNHNpdU)](https://youtu.be/TfsmmNHNpdU)
 
 ## Contents
 
