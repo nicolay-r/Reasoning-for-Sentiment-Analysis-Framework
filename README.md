@@ -3,6 +3,8 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nicolay-r/Reasoning-for-Sentiment-Analysis-Framework/blob/main/Reasoning_for_Sentiment_Analysis_Framework.ipynb)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.12342-b31b1b.svg)](https://arxiv.org/abs/2404.12342)
 
+> **Update November 01 2024:** ⭐ Implemented a separated [bulk-chain](https://github.com/nicolay-r/bulk-chain) project for handling massive amount of prompts with CoT. This concept was used in this studies.
+
 > **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/)
 
 > **Update 11 August 2024:** 🎤 Announcing the talk on this framework @ [NLPSummit 2024](https://www.nlpsummit.org/nlp-summit-2024/) with the preliminary ad and details in [X/Twitter post](https://x.com/JohnSnowLabs/status/1821999936478572836) 🐦. [![twitter](https://img.shields.io/twitter/url/https/shields.io.svg)](https://x.com/JohnSnowLabs/status/1821999936478572836)
