@@ -13,13 +13,15 @@ It contains source code for paper @ [LJoM journal](https://link.springer.com/jou
 
 ### **Updates**   
 
-> **Update November 01 2024:** ⭐ Implemented a separated [bulk-chain](https://github.com/nicolay-r/bulk-chain) project for handling massive amount of prompts with CoT. This concept was used in this studies.
+> **Update February 23 2025:** 🔥 Batching mode support. See 🌌 [Flan-T5 provider](https://github.com/nicolay-r/nlp-thirdgate/blob/master/llm/transformers_flan_t5.py) for [bulk-chain](https://github.com/nicolay-r/bulk-chain) project. Test [is available here](https://github.com/nicolay-r/bulk-chain/blob/master/test/test_provider_batching.py)
 
-> **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/)
+> **Update November 01 2024:** ⭐ Implemented a separated [bulk-chain](https://github.com/nicolay-r/bulk-chain) project for handling massive amount of prompts with CoT. This concept was used in this studies.
 
 ...
 
 </summary>
+
+> **Update 06 September 2024:** Mentioning the related information about the project at [BU-research-blog](https://blogs.bournemouth.ac.uk/research/2024/09/06/presenting-studies-on-llms-reasoning-capabilities-in-sentiment-analysis-of-mass-media-texts-at-nlpsummit-2024/)
 
 > **Update 11 August 2024:** 🎤 Announcing the talk on this framework @ [NLPSummit 2024](https://www.nlpsummit.org/nlp-summit-2024/) with the preliminary ad and details in [X/Twitter post](https://x.com/JohnSnowLabs/status/1821999936478572836) 🐦. [![twitter](https://img.shields.io/twitter/url/https/shields.io.svg)](https://x.com/JohnSnowLabs/status/1821999936478572836)
 
