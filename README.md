@@ -7,10 +7,12 @@ This repository represent studies and Collection of **LLM-powered reasoning fram
 It contains source code for paper @ [LJoM journal](https://link.springer.com/journal/12202) titled as:
 [Large Language Models in Targeted Sentiment Analysis for Russian](https://arxiv.org/abs/2404.12342).
 
+## Videos
+
 <div align="center">
 
-[![](https://markdown-videos-api.jorgenkh.no/youtube/qawLJsRHzB4)](https://youtu.be/qawLJsRHzB4)
 [![](https://markdown-videos-api.jorgenkh.no/youtube/kdkZsTQibm0)](https://youtu.be/kdkZsTQibm0)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/qawLJsRHzB4)](https://youtu.be/qawLJsRHzB4)
 
 </div> 
 
