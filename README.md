@@ -7,6 +7,13 @@ This repository represent studies and Collection of **LLM-powered reasoning fram
 It contains source code for paper @ [LJoM journal](https://link.springer.com/journal/12202) titled as:
 [Large Language Models in Targeted Sentiment Analysis for Russian](https://arxiv.org/abs/2404.12342).
 
+<div align="center">
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/qawLJsRHzB4)](https://youtu.be/qawLJsRHzB4)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/kdkZsTQibm0)](https://youtu.be/kdkZsTQibm0)
+
+</div> 
+
 
 <details>
 <summary>
@@ -53,7 +60,6 @@ It contains source code for paper @ [LJoM journal](https://link.springer.com/jou
 * [**Chain-of-Thought fine-tuning**](#three-hop-chain-of-thought-thor)
 * [**Fine-tuned Flan-T5 Checkpoints 🔥**](#fine-tuned-flan-t5)
 * [**Answers**](#answers)
-* [🎥**Video**](#video)
 * [References](#references)
 
 ## Installation
@@ -211,17 +217,6 @@ Results of the zero-shot models obtained during experiments fall outside the sco
 We open a separate  for LLM-resonses, including **answers on reasoning steps in THoR CoT** for ChatGPT model series:
 
 ### 👉 [RuSentNE-benchmark repository](https://github.com/nicolay-r/RuSentNE-LLM-Benchmark) 👈
-
-## Video
-
-**Survey in English:**
-
-[![](https://markdown-videos-api.jorgenkh.no/youtube/qawLJsRHzB4)](https://youtu.be/qawLJsRHzB4)
-
-**Overview in Russian Language:**
-
-[![](https://markdown-videos-api.jorgenkh.no/youtube/kdkZsTQibm0)](https://youtu.be/kdkZsTQibm0)
-
 
 ## References
 
